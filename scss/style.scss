@@ -7,11 +7,11 @@
 }
 body{
   background: #ff6721da;
-  background: #087a89;
+  background: radial-gradient(#f1cf0bda, red);
   height: 100vh;
   position: relative;
   font-family: sans-serif;
-  padding-top: 50px;
+  padding-top: 20px;
   img{
     position: absolute;
     width: 100px;
@@ -27,6 +27,7 @@ body{
   p{
     color: #1a1919;
     text-align: center;
+    font-size: 18px;
   }
   .container{
     width: 900px;
@@ -160,4 +161,30 @@ body{
   100%{
     margin-left: 180px;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  body{
+  .container{
+    width: 400px;
+    .person{
+      display: none;
+    }
+    .inout{
+      width: 80%;
+      margin: 0 auto;
+      .button_area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .btn1{
+          width: 40%;
+        }
+        .btn2{
+          width: 40%;
+        }
+      }
+    }
+  }
+}
 }

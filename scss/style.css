@@ -6,11 +6,11 @@
 
 body {
   background: rgba(255, 103, 33, 0.8549019608);
-  background: #087a89;
+  background: radial-gradient(rgba(241, 207, 11, 0.8549019608), red);
   height: 100vh;
   position: relative;
   font-family: sans-serif;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 body img {
   position: absolute;
@@ -27,6 +27,7 @@ body h1 {
 body p {
   color: #1a1919;
   text-align: center;
+  font-size: 18px;
 }
 body .container {
   width: 900px;
@@ -253,5 +254,29 @@ body .container .inout .button_area .btn2:hover::after {
 @keyframes blood2 {
   100% {
     margin-left: 180px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  body .container {
+    width: 400px;
+  }
+  body .container .person {
+    display: none;
+  }
+  body .container .inout {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body .container .inout .button_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  body .container .inout .button_area .btn1 {
+    width: 40%;
+  }
+  body .container .inout .button_area .btn2 {
+    width: 40%;
   }
 }/*# sourceMappingURL=style.css.map */
